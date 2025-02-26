@@ -1,6 +1,6 @@
-package com.evaluacion.evaluacion_backend.services;
+package com.evaluacion.evaluacion_backend.domain.service;
 
-import com.evaluacion.evaluacion_backend.entity.Usuario;
+import com.evaluacion.evaluacion_backend.domain.entity.Usuario;
 
 import java.util.List;
 

@@ -1,7 +1,8 @@
-package com.evaluacion.evaluacion_backend.services;
+package com.evaluacion.evaluacion_backend.application.services;
 
-import com.evaluacion.evaluacion_backend.entity.Productos;
-import com.evaluacion.evaluacion_backend.repository.ProductoRepository;
+import com.evaluacion.evaluacion_backend.domain.entity.Productos;
+import com.evaluacion.evaluacion_backend.domain.service.ProductoService;
+import com.evaluacion.evaluacion_backend.infrastructure.repository.ProductoRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

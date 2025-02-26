@@ -1,8 +1,8 @@
-package com.evaluacion.evaluacion_backend.controller;
+package com.evaluacion.evaluacion_backend.infrastructure.controller;
 
 
-import com.evaluacion.evaluacion_backend.entity.Usuario;
-import com.evaluacion.evaluacion_backend.services.UsuarioService;
+import com.evaluacion.evaluacion_backend.domain.entity.Usuario;
+import com.evaluacion.evaluacion_backend.domain.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

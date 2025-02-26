@@ -1,6 +1,6 @@
-package com.evaluacion.evaluacion_backend.services;
+package com.evaluacion.evaluacion_backend.domain.service;
 
-import com.evaluacion.evaluacion_backend.entity.Productos;
+import com.evaluacion.evaluacion_backend.domain.entity.Productos;
 import java.util.List;
 
 public interface ProductoService {

@@ -1,4 +1,4 @@
-package com.evaluacion.evaluacion_backend.entity;
+package com.evaluacion.evaluacion_backend.domain.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
