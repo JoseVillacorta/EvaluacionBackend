@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "Orden")
-public class Orden implements Serializable {
+@Table(name = "Productos")
+public class Productos implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -15,12 +15,12 @@ public class Orden implements Serializable {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "nombre_producto")
+    private String nombre_producto;
+
     @Column(name = "descripcion")
     private String descripcion;
 
-    @ManyToOne
-    @JoinColumn(name = "usuario_id")
-    private Usuario usuario;
 
     public Long getId() {
         return id;
@@ -38,11 +38,13 @@ public class Orden implements Serializable {
         this.descripcion = descripcion;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+    public String getNombre_producto() {
+        return nombre_producto;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setNombre_producto(String nombre_producto) {
+        this.nombre_producto = nombre_producto;
     }
+
+
 }

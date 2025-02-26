@@ -21,8 +21,8 @@ public class Usuario implements Serializable {
     @Column(name = "nombre")
     private String nombre;
 
-    @OneToMany(mappedBy = "usuario")
-    private List<Orden> ordens;
+    @Column(name = "correo")
+    private String correo;
 
     public Long getId() {
         return id;
@@ -40,11 +40,12 @@ public class Usuario implements Serializable {
         this.nombre = nombre;
     }
 
-    public List<Orden> getOrdens() {
-        return ordens;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setOrdens(List<Orden> ordens) {
-        this.ordens = ordens;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
+
 }
