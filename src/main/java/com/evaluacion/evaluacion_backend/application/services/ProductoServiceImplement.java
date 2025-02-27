@@ -15,6 +15,9 @@ public class ProductoServiceImplement implements ProductoService {
     @Autowired
     private ProductoRepository productoRepository;
 
+    public ProductoServiceImplement(ProductoRepository productoRepository) {
+        this.productoRepository = productoRepository;
+    }
 
     @Override
     @Transactional

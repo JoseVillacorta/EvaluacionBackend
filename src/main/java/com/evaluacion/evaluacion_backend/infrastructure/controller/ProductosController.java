@@ -66,6 +66,7 @@ public class ProductosController {
 
             currectProductos.setNombre_producto(productos.getNombre_producto());
             currectProductos.setDescripcion(productos.getDescripcion());
+            currectProductos.setIdUsuario(productos.getIdUsuario());
 
             Productos res = productoService.save(productos);
             return new ResponseEntity<Object>(res, HttpStatus.OK);
